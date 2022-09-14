@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("svgtopng/bg-intro-desktop.png");
+  background-color: rgb(243, 125, 104);
+  font-family: "Poppins", sans-serif;
+}
+.main {
+  max-width: 80%;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+}
+.main .text {
+  width: 50%;
+  display: flex;
+  padding: 10px 20px;
+  flex-direction: column;
+  align-items: center;
+}
+.text h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 1px;
+  color: #fff;
+  text-align: left;
+  padding-right: 24px;
+}
+.text p {
+  padding-top: 20px;
+  padding-right: 20px;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.main .form {
+  width: 50%;
+  padding: 10px 40px;
+}
+.form .demo {
+  text-align: center;
+  border: 1px solid hsl(248, 32%, 49%);
+  border-radius: 10px;
+  color: #fff;
+  background-color: hsl(248, 32%, 49%);
+  margin-bottom: 10px;
+}
+.demo h3 {
+  font-size: 13px;
+  padding: 10px;
+  font-weight: 600;
+}
+.form form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+  background-color: aliceblue;
+  border: 1px solid aliceblue;
+  border-radius: 10px;
+}
+form .custom {
+  width: 100%;
+}
+.custom input {
+  width: 100%;
+  height: 45px;
+  outline: 0;
+  border: 1px solid lightslategray;
+  border-radius: 4px;
+  margin: 10px 0px;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+form .submit .btn {
+  width: 100%;
+  height: 45px;
+  outline: 0;
+  border: 1px solid lightslategray;
+  border-radius: 4px;
+  margin: 10px 0px;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid hsl(154, 59%, 51%);
+  background-color: hsl(154, 59%, 51%);
+  color: aliceblue;
+  cursor: pointer;
+}
+form .refresh input {
+  cursor: pointer;
+  border: 1px solid hsl(0, 100%, 74%);
+  background-color: hsl(0, 100%, 74%);
+  color: aliceblue;
+}
+
+@media (max-width: 900px) {
+  .main {
+    max-width: 90%;
+  }
+}
+@media (max-width: 700px) {
+  .main {
+    margin: 40px 0px;
+    max-width: 90%;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .text {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .form {
+    width: 100%;
+    padding: 10px;
+    padding-top: 20px;
+  }
+  .text h1 {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 1px;
+    color: #fff;
+    text-align: center;
+    padding-right: 0px;
+  }
+  .text p {
+    padding-top: 30px;
+    padding-right: 0px;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #fff;
+    padding-bottom: 30px;
+  }
+  .form .demo {
+    margin-bottom: 15px;
+  }
+  .demo h3 {
+    font-size: 12px;
+    padding: 12px;
+    font-weight: 400;
+  }
+}
